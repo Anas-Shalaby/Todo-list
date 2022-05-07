@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="stylesheet" href="sass/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <label for="new-task"> Add Item </label>
+        <input type="text" id="new-task" />
+        <button>Add</button>
+      </p>
+      <h3>Todo</h3>
+      <ul class="incomplete-tasks">
+        <li>
+          <input type="checkbox" /><label>Pay Bills</label>
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+        <li class="editMode">
+          <input type="checkbox" />
+          <label for="">Go shopping</label>
+          <input type="text" value="Go shopping" />
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+      </ul>
+      <h3>Completed</h3>
+      <ul class="completed-tasks">
+        <li>
+          <input type="checkbox" checked />
+          <label for="">See the Doctor</label>
+          <input type="text" />
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+      </ul>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
